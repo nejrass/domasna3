@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="mk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Формула 1-Симулатор на трла</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body> 
+        <header> 
+            <h1>Ф1 Симулатор на трка</h1>
+            <p1>Трка од 10 круга | Стратегија на гуми, пит-стопови и инциденти</p1>
+        </header>
+
+        <div class="container">
+            <!--контроли за трката--> 
+            <section class="control-section"> 
+                <h2>Контролен центар</h2>
+                <p1 id="krugInfo"> Тековен круг:0/10</p1>
+<button id="startBtn" onclick="zapocniTrka()">Започнете ја трката</button>
+            <button id="sledenKrugBtn" onclick="sledenKrug()" disabled>Следен круг</button>
+        </section>
+
+        <!-- Табела со возачи и статуси -->
+        <section>
+            <h2>Табела со возачи и статуси</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Позиција</th>
+                        <th>Возач</th>
+                        <th>Тим</th>
+                        <th>Тип на гуми</th>
+                        <th>Пит-стоп?</th>
+                        <th>Вкупно време</th>
+                        <th>Статус во круг</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaVozaci">
+                    <!-- Овде JavaScript динамички ги полни возачите -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
